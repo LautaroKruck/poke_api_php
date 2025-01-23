@@ -14,33 +14,6 @@ body {
     min-height: 100vh;
 }
 
-/* Header */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header h1 a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 2rem;
-}
-
-header nav a {
-    margin-left: 20px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-header nav a:hover {
-    text-decoration: underline;
-}
-
 /* Layout principal */
 .container {
     display: flex;
@@ -236,29 +209,4 @@ header nav a:hover {
     font-size: 1.2rem;
     color: #555;
     margin: 5px 0;
-}
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Mensajes de error */
-.error {
-    color: red;
-    font-weight: bold;
 }
