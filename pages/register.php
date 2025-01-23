@@ -40,34 +40,37 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 </head>
 <body>
+    
     <?php include('../includes/extras/header.php'); ?>
-
-    <form action="register.php" method="POST">
-        <h2>Registro</h2>
-        <?php if ($error): ?>
-            <p style="color: red;"><?php echo $error; ?></p>
-        <?php endif; ?>
-        <div class="form-group">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Correo Electrónico</label>
-            <input type="email" id="email" name="email" placeholder="Introduce tu email" required>
-        </div>
-        <div class="form-group">
-            <label for="password">Contraseña</label>
-            <input type="password" id="password" name="password" placeholder="Introduce tu contraseña" required>
-        </div>
-        <div class="form-group">
-            <label for="repeat-password">Repetir Contraseña</label>
-            <input type="password" id="repeat-password" name="repeat-password" placeholder="Repite tu contraseña" required>
-        </div>
-        <div class="form-group" style="display: flex; justify-content: space-between;">
-            <button type="submit">Enviar</button>
-            <button type="reset">Borrar</button>
-        </div>
-    </form>
+    
+    <main class="container">
+        <form action="register.php" method="POST">
+            <h2>Registro</h2>
+            <?php if ($error): ?>
+                <p style="color: red;"><?php echo $error; ?></p>
+            <?php endif; ?>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Introduce tu email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Introduce tu contraseña" required>
+            </div>
+            <div class="form-group">
+                <label for="repeat-password">Repetir Contraseña</label>
+                <input type="password" id="repeat-password" name="repeat-password" placeholder="Repite tu contraseña" required>
+            </div>
+            <div class="form-group" style="display: flex; justify-content: space-between;">
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </div>
+        </form>
+    </main>
     
     <?php include('../includes/extras/footer.php'); ?>
 
