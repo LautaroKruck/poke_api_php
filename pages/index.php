@@ -35,6 +35,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="stylesheet" href="../assets/css/login.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
+    <style>
+        .input-error {
+            border-color: red;
+        }
+    </style>
 </head>
 <body>
     <?php include('../includes/extras/header.php'); ?>
@@ -47,15 +52,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <?php endif; ?>
             <div class="form-group">
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
+                <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required class="<?php echo $error ? 'input-error' : ''; ?>">
             </div>
+
             <div class="form-group">
                 <label for="email">Correo Electrónico</label>
-                <input type="email" id="email" name="email" placeholder="Introduce tu email" required>
+                <input type="email" id="email" name="email" placeholder="Introduce tu email" required class="<?php echo $error ? 'input-error' : ''; ?>">
             </div>
+
             <div class="form-group">
                 <label for="password">Contraseña</label>
-                <input type="password" id="password" name="password" placeholder="Introduce tu contraseña" required>
+                <input type="password" id="password" name="password" placeholder="Introduce tu contraseña" required class="<?php echo $error ? 'input-error' : ''; ?>">
             </div>
             <div class="form-group" style="display: flex; justify-content: space-between;">
                 <button type="submit">Iniciar</button>

@@ -6,11 +6,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed; /* Fijo en la parte superior */
-    top: 0; /* Asegura que esté en la parte superior */
-    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
-    min-height: 20vh;
+    position: fixed;
+    top: 0;
     width: 100%;
+    min-height: 15vh;
 }
 
 header h1 a {
